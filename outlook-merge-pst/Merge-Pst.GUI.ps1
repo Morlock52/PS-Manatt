@@ -381,7 +381,7 @@ function Start-Merge() {
         $(if (-not [string]::IsNullOrWhiteSpace($logPath)) { @('-LogPath', ('"{0}"' -f $logPath)) } else { @() }) +
         $(if ($chkAppend.Checked) { @('-AppendLog') } else { @() }) +
         $(if ($summary) { @('-ShowSummaryDialog') } else { @() }) +
-        @('-SourcePstPaths') + $sources.ForEach({ '"{0}"' -f $_ })
+        @('-SourcePstPaths') + (@($sources | ForEach-Object { '"{0}"' -f $_ }))
     ) -join ' '
     $psi.RedirectStandardOutput = $true
     $psi.RedirectStandardError  = $true
