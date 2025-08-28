@@ -4,6 +4,7 @@ PS-manatt is a growing collection of practical PowerShell scripts and helpers. T
 
 Scripts in this repo:
 - Script 1: Merge PSTs — Outlook Helper (`outlook-merge-pst/`)
+- Script 2: Export AD Group Members to Excel (`ad-group-members/`)
 
 ## Script 1: Merge PSTs — Outlook Helper
 
@@ -68,6 +69,9 @@ outlook-merge-pst/
   Merge-Pst.ps1       # Core merging logic
   Merge-Pst.GUI.ps1   # GUI launcher
   README.md           # Detailed breakdown + flow
+ad-group-members/
+  Export-GroupMembers.ps1     # Core exporter
+  Export-GroupMembers.GUI.ps1 # GUI wrapper
 README.md             # This file
 ```
 
