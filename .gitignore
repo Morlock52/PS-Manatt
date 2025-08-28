@@ -1,0 +1,27 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.user
+*.lnk
+*.bak
+
+# Logs and outputs
+logs/
+*.log
+*.txt
+!README.md
+
+# PowerShell
+*.ps1xml
+*.psm1
+*.psd1
+*.nupkg
+
+# Large data
+*.pst
+*.ost
+*.mbox
+
